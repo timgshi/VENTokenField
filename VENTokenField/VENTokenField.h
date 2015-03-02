@@ -29,6 +29,7 @@
 - (void)tokenField:(VENTokenField *)tokenField didDeleteTokenAtIndex:(NSUInteger)index;
 - (void)tokenField:(VENTokenField *)tokenField didChangeText:(NSString *)text;
 - (void)tokenFieldDidBeginEditing:(VENTokenField *)tokenField;
+- (BOOL)tokenField:(VENTokenField *)tokenField inputTextField:(UITextField *)inputTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
 @end
 
 @protocol VENTokenFieldDataSource <NSObject>
